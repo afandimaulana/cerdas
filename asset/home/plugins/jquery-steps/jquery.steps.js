@@ -1946,10 +1946,9 @@ var defaults = $.fn.steps.defaults = {
             var obj=JSON.parse(data);
             // alert( "Data Loaded: " + obj.SPORT ); // Display information from link_to your_php_file.php
 
-            $('[name="sport"]').val(obj.SPORT);
-            $('[name="bebek"]').val(obj.BEBEK);
-            $('[name="matic"]').val(obj.MATIC);
-            $('[name="result"]').val(obj.RESULT);
+            $('[name="Hatchback"]').val(obj.Hatchback);
+            $('[name="mpv"]').val(obj.mpv);
+            $('[name="sedan"]').val(obj.sedan);
             $('#defaultModal').modal('show');
             $('.modal-title').text('RESULT CF');
         });

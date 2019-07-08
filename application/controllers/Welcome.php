@@ -13,9 +13,16 @@ class Welcome extends CI_Controller
 		$hatchback = $this->hatchback();
 		$mpv = $this->mpv();
 		$sedan = $this->sedan();
-		echo "Hatchback".$hatchback;
-		echo "mpv".$mpv;
-		echo "sedan".$sedan;
+
+		$data=array(
+			'Hatchback'=> $hatchback,
+			'mpv'=> $mpv,
+			'sedan'=> $sedan
+		);
+		// echo "Hatchback".$hatchback;
+		// echo "mpv".$mpv;
+		// echo "sedan".$sedan;
+		echo json_encode($data);
 	}
 
 	private function hatchback()

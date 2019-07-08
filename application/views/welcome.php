@@ -324,25 +324,19 @@
                             <div class="form-group">
                                 <label for="val1">HATCHBACK</label>
                                 <div class="form-line">
-                                    <input type="text" id="val1" name="sport" class="form-control" readonly/>
+                                    <input type="text" id="val1" name="Hatchback" class="form-control" readonly/>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="val2">MPV</label>
                                 <div class="form-line">
-                                    <input type="text" id="val2" name="bebek" class="form-control" readonly/>
+                                    <input type="text" id="val2" name="mpv" class="form-control" readonly/>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="val3">SEDAN</label>
                                 <div class="form-line">
-                                    <input type="text" id="val3" name="matic" class="form-control" readonly/>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="val4">RESULT</label>
-                                <div class="form-line">
-                                    <textarea name="result" id="result" cols="50" rows="5" readonly></textarea>
+                                    <input type="text" id="val3" name="sedan" class="form-control" readonly/>
                                 </div>
                             </div>
                         </div>
@@ -375,5 +369,11 @@
         <script src="<?php echo base_url('asset/home/'); ?>js/pages/forms/form-wizard.js"></script>
         <!-- Demo Js -->
         <script src="<?php echo base_url('asset/home/'); ?>js/demo.js"></script>      
+        <script>
+        function refresh()
+        {
+            location.reload();
+        }
+        </script>
     </body>
 </html>
